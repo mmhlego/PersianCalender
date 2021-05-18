@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="Background" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" style="-fx-background-color: #F7FBFC30; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainPage">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #D6E6F2b0; -fx-background-radius: 10; -fx-border-radius: 10;">
+         <HBox.margin>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </HBox.margin>
+         <children>
+            <Label fx:id="MonthSpecialDaysLBL" alignment="CENTER" prefHeight="40.0" prefWidth="220.0" style="-fx-border-color: #6887C5; -fx-border-width: 0 0 1 0;" text="مناسبت های ماه" textFill="#6887c5">
+               <font>
+                  <Font name="B Koodak Bold" size="20.0" />
+               </font>
+            </Label>
+            <ScrollPane hbarPolicy="NEVER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="350.0" prefWidth="300.0" styleClass="ScrollPane" stylesheets="@../Styles/ScrollPane.css">
+               <content>
+                  <VBox fx:id="MonthSpecialDaysVBox" alignment="TOP_RIGHT" maxWidth="-Infinity" minHeight="100.0" minWidth="-Infinity" prefWidth="300.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="450.0" prefWidth="500.0" style="-fx-background-color: #D6E6F2b0; -fx-background-radius: 10; -fx-border-radius: 10;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: #769FCD; -fx-background-radius: 10 10 0 0;">
+               <children>
+                  <Group>
+                     <children>
+                        <Button fx:id="NextMonthBTN" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #D6E6F2; -fx-background-radius: 30;" text="ماه بعدی         ">
+                           <font>
+                              <Font name="B Koodak Bold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="-3.0" left="-2.0" top="-2.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <ImageView disable="true" fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                           <image>
+                              <Image url="@../Images/DownArrow.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Group>
+                  <Label fx:id="CurrentMonthLBL" alignment="CENTER" prefHeight="40.0" prefWidth="280.0" text="12 اردیبهشت 1400" textFill="WHITE">
+                     <font>
+                        <Font name="B Koodak Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Group>
+                     <children>
+                        <Button fx:id="PrevMonthBTN" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #D6E6F2; -fx-background-radius: 30;" text="         ماه قبلی">
+                           <font>
+                              <Font name="B Koodak Bold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="-3.0" left="-2.0" top="-2.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <ImageView disable="true" fitHeight="31.0" fitWidth="31.0" layoutX="59.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                           <image>
+                              <Image url="@../Images/DownArrow.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Group>
+               </children>
+            </HBox>
+            <GridPane hgap="20.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="500.0" vgap="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="80.0" text="شنبه">
+                     <font>
+                        <Font name="B Koodak Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="80.0" text="یکشنبه" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="B Koodak Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="80.0" text="دوشنبه" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="B Koodak Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="80.0" text="سه شنبه" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="B Koodak Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="80.0" text="چهارشنبه" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="B Koodak Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="80.0" text="پنجشنبه" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="B Koodak Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="80.0" text="جمعه" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="B Koodak Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </GridPane>
+            <GridPane fx:id="MonthDaysGrid" hgap="20.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="350.0" prefWidth="500.0" vgap="20.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="15.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="50.0" spacing="20.0" style="-fx-background-color: #D6E6F2b0; -fx-background-radius: 0 20 20 0;">
+         <children>
+            <ImageView fx:id="ExitBTN" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Exit.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="DragBTN" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Drag.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
